@@ -1,0 +1,76 @@
+ // オープンアニメーション処理
+ $(".line01").animate({"width":"100%"},(800),function(){
+    $(".line01").css("right",0);
+    $(".line01").animate({"width":"0%"},(500),function(){
+        $(".up").css("top","0");
+        $(".up").animate({"height":"0%"});
+        $(".down").css("bottom","0");
+        $(".down").animate({"height":"0%"});
+    });
+});
+//見出しテキストアニメーション
+$(".mainTopJpeg").hide();
+$(".mainTopJpeg").delay(800).fadeIn(1300,function(){
+    $(".topText01").addClass("scrollin");
+    $(".topText02").delay(300).addClass("scrollin");
+    $(".topText03").delay(600).addClass("scrollin");
+    $(".topText04").delay(900).addClass("scrollin");
+    $(".bottomText01").delay(900).addClass("scrollin");
+    $(".bottomText02").delay(1100).addClass("scrollin");
+    $(".bottomText03").delay(1300).addClass("scrollin");
+    $(".bottomText04").delay(1500).addClass("scrollin");
+    $(".bottomText05").delay(1700).addClass("scrollin");
+    $(".mainStoreName").delay(1800).addClass("scrollin");
+    $(".scrollDownText").delay(2000).addClass("scrollin");
+})
+// ハンバーガーメニューの処理
+$(function(){
+    $(".asideMenu").hide();
+    $(".menuTrigger")  .click(function(){
+        $(".asideMenu").fadeToggle(300);
+        $(".span01").toggleClass("tabToggle01");
+        $(".span02").toggleClass("tabToggle02");
+        $(".span03").toggleClass("tabToggle03");
+    })  
+})
+//ボタンを踏んだときの処理
+$(function(){
+    $("#listConseptButton").on('click',function(){
+        $(".asideMenu").hide();
+        $(".span01").toggleClass("tabToggle01");
+        $(".span02").toggleClass("tabToggle02");
+        $(".span03").toggleClass("tabToggle03");
+    })
+})
+$(function(){
+    $("#listMenuButton").on('click',function(){
+        $(".asideMenu").hide();
+        $(".span01").toggleClass("tabToggle01");
+        $(".span02").toggleClass("tabToggle02");
+        $(".span03").toggleClass("tabToggle03");
+    })
+})
+$(function(){
+    $("#listFacilityButton").on('click',function(){
+        $(".asideMenu").hide();
+        $(".span01").toggleClass("tabToggle01");
+        $(".span02").toggleClass("tabToggle02");
+        $(".span03").toggleClass("tabToggle03");
+    })
+})
+$(function(){
+    $("#listAccsessButton").on('click',function(){
+        $(".asideMenu").hide();
+        $(".span01").toggleClass("tabToggle01");
+        $(".span02").toggleClass("tabToggle02");
+        $(".span03").toggleClass("tabToggle03");
+    })
+})
+$(function(){
+    $("#listAccsessButton").on('click',function(){
+        $(".asideMenu").hide();
+        $(".span01").toggleClass("tabToggle01");
+        $(".span02").toggleClass("tabToggle02");
+        $(".span03").toggleClass("tabToggle03");
+    })
+})
