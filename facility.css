@@ -1,0 +1,382 @@
+.facilityContainar{
+    width: 100%;
+    height: 210vh;
+    background-color: rgb(20,20,20);
+    color: aliceblue;
+}
+/* 小見出し */
+.facilityMainArea{
+    padding-top: 70px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+/* 小見出しアニメーション */
+.facilityFadein01{
+    opacity: 0;
+    transition-delay: initial 1000ms; 
+    transition: all 2700ms; /*1000msで1秒 */
+}
+.facilityFadein02{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 3100ms; /*1000msで1秒 */   
+}
+.facilityFadein03{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 2500ms; /*1000msで1秒 */   
+}
+.facilityFadein04{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 2900ms; /*1000msで1秒 */   
+}
+.facilityFadein05{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 1800ms; /*1000msで1秒 */   
+}
+.facilityFadein06{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 3000ms; /*1000msで1秒 */   
+}
+.facilityFadein07{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 2300ms; /*1000msで1秒 */   
+}
+.facilityFadein08{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 2800ms; /*1000msで1秒 */   
+}
+.facilityscrollin{
+    opacity: 1;
+    transform: translate(0,0);
+}
+/* コンテンツ */
+.facilityLine{
+    margin-top: 10px;
+    margin: 0 auto;
+    width: 0%;
+    height: 4px;
+    background-color: cornflowerblue;
+    transition: all 1000ms;
+}
+.facilityLinescrollin{
+    animation-duration: 3000ms;
+    animation-name: exted;
+    animation-timing-function:ease;
+}
+@keyframes exted{
+    0%{
+        width: 0%;
+        background-color: rgb(48, 11, 140);
+    }
+    40%{
+        height: 2px;
+    }
+    60%{
+        width: 90%;
+        background-color:rgb(212, 213, 214);
+    }
+    80%{
+        width: 4px;
+    }
+    100%{
+        width: 0%;
+        background-color: rgb(40, 84, 186);
+    }
+}
+/* メインコンテナ */
+.facilityImgArea{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.facilityImgAreascrollin{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.facilityImgAreaTop{
+    height: 30%;
+    width: 90%;
+    animation: infinite;
+    animation-name: changecolor;
+    animation-duration: 15000ms;
+    animation-timing-function: ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facilityImgAreaCenter{
+    height: 30%;
+    width: 90%;
+    animation: infinite;
+    animation-name: changecolor;
+    animation-duration: 15000ms;
+    animation-timing-function: ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facilityImgAreaBottom{
+    height: 30%;
+    width: 90%;
+    animation: infinite;
+    animation-name: changecolor;
+    animation-duration: 15000ms;
+    animation-timing-function: ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes changecolor{
+    0%{
+        background-color: rgb(21, 21, 21);
+    }
+    20%{
+        background-color: rgb(61, 61, 61);
+    }
+    50%{
+        background-color: rgb(20,20,20);
+    }
+    70%{
+        background-color: rgb(116, 116, 116);
+    }
+    100%{
+        background-color: rgb(21, 21, 21);
+    }
+}
+/* 中のコンテナ */
+.facilityImgAreaTopLeft{
+    position: relative;
+    width: 60%;
+    height: 90%;
+    background-color:aliceblue;
+    display: flex;
+}
+.facilityImgAreaTopRight{
+    width: 35%;
+    height: 90%;
+    background-color: rgb(20,20,20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facilityImgAreaCenterLeft{
+    width: 35%;
+    height: 90%;
+    background-color: rgb(20,20,20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facilityImgAreaCenterRight{
+    position: relative;
+    width: 60%;
+    height: 90%;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.facilityImgAreaBottomLeft{
+    position: relative;
+    width: 60%;
+    height: 90%;
+    background-color: aliceblue;
+    display: flex;
+}
+.facilityImgAreaBottomRight{
+    width: 35%;
+    height: 90%;
+    background-color: rgb(20,20,20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* イメージ写真群 */
+.facilityImg{
+    width: 90%;
+    height: 90%;
+    background-image: url(../jpeg/facirity.jpeg);
+    background-position: cover;
+    background-attachment: fixed;
+}
+.facilityImg01{
+    display: inline-block;
+    width: 50%;
+    height: 80%;
+}
+@media(max-width:600px){
+    .facilityImg01{
+        width: 70%;
+    }
+}
+.facilityImg02{
+    display: inline-block;
+    width: 50%;
+    height: 80%;
+}
+@media(max-width:600px){
+    .facilityImg02{
+        width: 70%;
+    }
+}
+.facilityImg03{
+    display: inline-block;
+    width: 50%;
+    height: 80%;
+}
+@media(max-width:600px){
+    .facilityImg03{
+        width: 70%;
+    }
+}
+/* テキストコンテンツ */
+.FacilityText01{
+    position: absolute;
+    top: 54%;
+    right: 10%;
+    width: 50%;
+    height: 40%;
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FacilityText02{
+    position: absolute;
+    top: 54%;
+    right: 10%;
+    width: 50%;
+    height: 40%;
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FacilityText03{
+    position: absolute;
+    top: 54%;
+    right: 10%;
+    width: 50%;
+    height: 40%;
+    background-color: rgb(20, 20, 20);
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* スクロールダウンボタン */
+.facilityscrollDownText{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.facilityscrollDownTextArea{
+    animation: infinite;
+    animation-name: rotate;
+    animation-duration: 6000ms;
+    animation-timing-function: linear;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.facilityscrollDownTextArea span{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 16px);/*中心点文字サイズ分ずらす*/
+    display: inline-block;
+    width: 30px;
+    height: 100px;
+    transform-origin: center bottom;/*回転の基準点*/
+}
+#facilityacolor{
+    color: black;
+    transition: all 500ms;
+}
+#facilityacolor:hover{
+    color: aliceblue;
+}
+.facilityscrollDownButton{
+    color: black;
+    font-size: 1rem;
+    position: absolute;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(245, 245, 245, 0.833);
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 800ms;
+}
+.facilityscrollDownButton:hover{
+    width: 100px;
+    height: 100px;
+    color:whitesmoke;
+    background-color: rgba(23, 23, 23, 0.858);
+    border: 1px solid white;
+}
+.facilityscrollDownText01{
+    transform: rotate(0deg);
+}
+.facilityscrollDownText02{
+    transform: rotate(20deg);
+}
+.facilityscrollDownText03{
+    transform: rotate(40deg);
+}
+.facilityscrollDownText04{
+    transform: rotate(60deg);
+}
+.facilityscrollDownText05{
+    transform: rotate(80deg);
+}
+.facilityscrollDownText06{
+    transform: rotate(100deg);
+}
+.facilityscrollDownText07{
+    transform: rotate(120deg);
+}
+.facilityscrollDownText08{
+    transform: rotate(140deg);
+}
+.facilityscrollDownText09{
+    transform: rotate(160deg);
+}
+.facilityscrollDownText10{
+    transform: rotate(180deg);
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

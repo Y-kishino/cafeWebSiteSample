@@ -1,0 +1,207 @@
+.mainConatinar{
+    width: 100%;
+    height: 150vh;
+    background-color: rgb(20, 20, 20);
+}
+.pagenameArea{
+    padding-top: 10px;
+    padding-bottom:10px; ;
+    width: 0%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    color: rgb(20, 20, 20);
+    transition: all 1000ms;
+}
+.TabTargetArea{
+    margin: 0 auto;
+    width: 100%;
+    height: 10vh;
+    background-color:rgb(20, 20, 20);
+    transition: all 900ms;
+}
+.TabTargetAreafadelIn{
+    background-color: rgb(20, 20, 20);
+}
+.tabul{
+    margin: 0;
+    display: inline-block;
+    width: 91%;
+    height:10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(213, 213, 213);
+    opacity: 0;
+    transition: all 1000ms;
+}
+.tabulFadeIn{
+    background-color:rgb(20, 20, 20);
+    opacity: 1;
+}
+.tabul li{
+    list-style: none;
+    color: aliceblue;
+    font-size: 1.5rem;
+    transition: all 700ms;
+}
+.tabul li:hover{
+    transform: scale(1.1,1.1);
+    animation-name: text;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in ;
+}
+@keyframes text{
+    0%{
+        color: aliceblue;
+    }
+    50%{
+        color: black;
+    }
+    80%{
+        color: cornflowerblue;
+    }
+    100%{
+        color: rgb(96, 96, 96);
+    }
+}
+.isActive{
+    color: cornflowerblue;
+}
+.foodContents{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(90deg,rgb(15,15,15)63%,rgba(154, 154, 154, 0)100%),url(../jpeg/afternoon01.jpg);
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-start;
+}
+.dessertContents{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(90deg,rgb(15,15,15)63%,rgba(154, 154, 154, 0)100%),url(../jpeg/afternoon02.jpg);
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-start;
+}
+.drinkContens{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(90deg,rgb(15,15,15)63%,rgba(154, 154, 154, 0)100%),url(../jpeg/afternoon03.jpg);
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-start;
+}
+.contentsArea{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(37, 37, 37);
+    opacity: 0;
+    transition-delay: 1500ms;
+    transition: all 1000ms;
+    transform:translateX(-130px) ;
+}
+.contentsAreaFadein{
+    opacity: 1;
+    transform: translate(0,0);
+}
+.ContentsArea{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ContentsArea ul{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.ContentsAreaul p{
+    font-size: 1.3rem;
+    color: aliceblue;
+}
+.ContentsAreaul li{
+    list-style: none;
+    color: aliceblue;
+    transition: all 1000ms;
+}
+.ContentsAreaul li:hover{
+    transform: scale(1.1,1.1);
+}
+.tabContentItem{
+    display:none ;
+}
+.scrollUpArea{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(20, 20, 20);
+}
+.scrollUpButton a{
+    color: black;
+    transition: all 600ms;
+}
+.scrollUpButton a:hover{
+    color: aliceblue
+}
+.scrollUpButton{
+    width: 11%;
+    height: 40%;
+    border-radius: 50%;
+    background-color: rgb(220, 230, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+    transition: all 800ms;
+    animation: infinite;
+    animation-duration: 6000ms;
+    animation-name: fuwafuwa;
+    animation-timing-function: linear;
+}
+@media (max-width:600px){
+    .scrollUpButton{
+        width: 16%;
+        font-size: 1rem;
+    }
+}
+.scrollUpButton:hover{
+    background-color: rgba(66, 67, 68, 0.709);
+    color: aliceblue;
+}
+@keyframes fuwafuwa{
+    0%{
+        transform: translate(0,0) rotate(-7deg);
+    }
+    25%{
+        transform: translate(4px,6px) rotate(-5deg);
+    }
+    50%{
+        transform: translate(-6px,10px) rotate(6deg);
+    }
+    75%{
+        transform: translate(-2px,-5px) rotate(-10deg);
+    }
+    85%{
+        transform: translate(-4px,5px) rotate(4deg);
+    }
+    100%{
+        transform: translate(0,0) rotate(-7deg);
+    }
+}
+.contactscrollin{
+    opacity: 1;
+    transform: translate(0,0);
+}

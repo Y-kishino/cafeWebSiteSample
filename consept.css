@@ -1,0 +1,231 @@
+/* コンセプトエリアの設定 */
+.conseptContainar{
+    width: 100%;
+    height: 165vh;
+    background-color: rgb(20,20,20);
+    color: aliceblue;
+}
+.conseptMainTextArea{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50px;
+    z-index: 10;
+}
+.conseptMainText{
+    font-size: 3rem;
+    z-index: 10;
+}
+.conseptMainText span{
+    z-index: 10;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* スライダーのスタイル */
+.conseptSlider01{
+    width: 100%;
+    height: 80vh;
+    background-color: antiquewhite;
+    background: linear-gradient(30deg,rgba(238, 235, 235, 0.569) 0%,rgba(229, 221, 221, 0.37) 20%,rgba(215, 213, 213, 0.349) 65%,rgba(222, 221, 221, 0.434) 100%),url(../jpeg/slider01.jpeg);
+    background-size: cover;
+}
+.conseptSlider02{
+    width: 100%;
+    height: 80vh;
+    background-color: lavender;
+    background: linear-gradient(30deg,rgba(83, 82, 82, 0.569) 0%,rgba(68, 67, 67, 0.37) 20%,rgba(60, 59, 59, 0.349) 65%,rgba(71, 70, 70, 0.434) 100%),url(../jpeg/slider02.jpeg);
+    background-size: cover;
+}
+.conseptSlider03{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(217, 61, 61);
+    background: linear-gradient(30deg,rgba(198, 193, 193, 0.569) 0%,rgba(222, 218, 218, 0.37) 20%,rgba(238, 224, 224, 0.349) 65%,rgba(206, 203, 203, 0.434) 100%),url(../jpeg/slider03.jpeg);
+    background-size: cover;
+}
+.conseptSlider04{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(217, 61, 61);
+    background: linear-gradient(30deg,rgba(83, 82, 82, 0.569) 0%,rgba(68, 67, 67, 0.37) 20%,rgba(60, 59, 59, 0.349) 65%,rgba(71, 70, 70, 0.434) 100%),url(../jpeg/slider04.jpeg);
+    background-size: cover;
+}
+.bx-wrapper {
+    background-color: transparent;
+    margin: 0px auto;
+    border: none;
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+}
+/* スライダー内のコンテンツ */
+.sliderTextContainar01{
+    margin-top: 20px;
+    margin-left: 30px;
+    color: black;
+    font-size: 1rem;
+}
+.sliderText01{
+    color: black;
+    font-size: 3rem;
+}
+.sliderText02{
+    color: rgb(231, 226, 226);
+    font-size: 2rem;
+}
+.sliderText03{
+    color: black;
+    font-size: 1.5rem;
+}
+.sliderText04{
+    color: rgb(231, 226, 226);
+    font-size: 2rem;
+}
+.sliderTextContainar02{
+    margin-top: 20px;
+    margin-left: 30px;
+    color: rgb(221, 219, 219);
+    font-size: 1rem;
+}
+/* 題名のアニメーション */
+.conseptFadein01{
+    opacity: 0;
+    transition-delay: initial 1000ms; 
+    transition: all 2500ms; /*1000msで1秒 */
+}
+.conseptFadein02{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 2600ms; /*1000msで1秒 */   
+}
+.conseptFadein03{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 2500ms; /*1000msで1秒 */   
+}
+.conseptFadein04{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 1800ms; /*1000msで1秒 */   
+}
+.conseptFadein05{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 2300ms; /*1000msで1秒 */   
+}
+.conseptFadein06{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 2000ms; /*1000msで1秒 */   
+}
+.conseptFadein07{
+    opacity: 0; 
+    transition-delay: initial 1000ms;
+    transition: all 3000ms; /*1000msで1秒 */   
+}
+.scrollin{
+    opacity: 1;
+    transform: translate(0,0);
+}
+/* スクロールダウンボタン */
+.conseptscrollDownText{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.conseptscrollDownTextArea{
+    animation: infinite;
+    animation-name: rotate;
+    animation-duration: 6000ms;
+    animation-timing-function: linear;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.conseptscrollDownTextArea span{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 16px);/*中心点文字サイズ分ずらす*/
+    display: inline-block;
+    width: 30px;
+    height: 100px;
+    transform-origin: center bottom;/*回転の基準点*/
+}
+#conseptacolor{
+    color: black;
+    transition: all 500ms;
+}
+#conseptacolor:hover{
+    color: aliceblue;
+}
+.conseptscrollDownButton{
+    color: black;
+    font-size: 1rem;
+    position: absolute;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(245, 245, 245, 0.833);
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 800ms;
+}
+.conseptscrollDownButton:hover{
+    width: 100px;
+    height: 100px;
+    color:whitesmoke;
+    background-color: rgba(23, 23, 23, 0.858);
+    border: 1px solid white;
+}
+.conseptscrollDownText01{
+    transform: rotate(0deg);
+}
+.conseptscrollDownText02{
+    transform: rotate(20deg);
+}
+.conseptscrollDownText03{
+    transform: rotate(40deg);
+}
+.conseptscrollDownText04{
+    transform: rotate(60deg);
+}
+.conseptscrollDownText05{
+    transform: rotate(80deg);
+}
+.conseptscrollDownText06{
+    transform: rotate(100deg);
+}
+.conseptscrollDownText07{
+    transform: rotate(120deg);
+}
+.conseptscrollDownText08{
+    transform: rotate(140deg);
+}
+.conseptscrollDownText09{
+    transform: rotate(160deg);
+}
+.conseptscrollDownText10{
+    transform: rotate(180deg);
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.conseptBottomMargin{
+    background-color: (20,20,20);
+    width: 100%;
+    height: 30vh;
+}

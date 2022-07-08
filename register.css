@@ -1,0 +1,158 @@
+.header{
+    width: 0%;
+    height: 25vh;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registerHeaderContainar{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.daimei{
+    display: inline-block;
+    width: 40%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 2.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (max-width:600px){
+    .daimei{
+        font-size: 1.5rem;
+    }
+}
+.nihonngodaimei{
+    color: aliceblue;
+}
+.registerspan01{
+    opacity: 0;
+    transition-delay: 200ms;
+    transition: all 1000ms;
+}
+.registerspan02{
+    opacity: 0;
+    transition-delay: 600ms;
+    transition: all 1300ms;
+}
+.registerspan03{
+    opacity: 0;
+    transition-delay: 100ms;
+    transition: all 800ms;
+}
+.registerspan04{
+    opacity: 0;
+    transition-delay: 500ms;
+    transition: all 1200ms;
+}
+.registerspan05{
+    opacity: 0;
+    transition-delay: 250ms;
+    transition: all 700ms;
+}
+.registerspan06{
+    opacity: 0;
+    transition-delay: 700ms;
+    transition: all 900ms;
+}
+.registerspan07{
+    opacity: 0;
+    transition-delay: 400ms;
+    transition: all 1000ms;
+}
+.nihonngodaimei{
+    opacity: 0;
+    transition-delay: 600ms;
+    transition: all 1500ms;
+}
+.formContainar{
+    width: 0%;
+    height: 75vh;
+    background-color: rgb(206, 204, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.registerForm{
+    opacity: 0;
+    display: inline-block;
+    margin: 0 auto;
+    width: 40%;
+    height: 100%;
+    transition: all 1200ms;
+}
+@media(max-width:730px){
+    .registerForm{
+        position: relative;
+        right: 50px;
+    }
+}
+@media(max-width:600px){
+    .registerForm{
+        position: relative;
+        right: 120px;
+    }
+}
+.registerForm div{
+    width: fit-content;
+    height: 10vh;
+}
+#Commentform{
+    height: 27vh;
+}
+.registerForm div:first-of-type{
+    padding-top: 20px;
+}
+.registerFadeIn{
+    opacity: 1;
+}
+.submit{
+    text-decoration: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 60px;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid white;
+    color: aliceblue;
+    transition: all 500ms;
+}
+@media (max-width:600px){
+    .submit{
+        position: relative;
+        top: 10px;
+        width: 70px;
+        height: 45px;
+        font-size: small;
+    }
+}
+.submit:hover{
+    color: rgb(24, 24, 24);
+    background-color: aliceblue;
+    border: 1px solid rgb(24, 24, 24);
+    transform: scale(1.2,1.2);
+}
+.errorText{
+    opacity: 0;
+    position: relative;
+    bottom: 12px;
+    color: crimson;
+}
+@media(max-width:600px){
+    .errorText{
+        position: relative;
+        bottom: 10px;
+        font-size: 10px;
+    }
+}
+.errorTextfadeIn{
+    opacity: 1;
+}

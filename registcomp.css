@@ -1,0 +1,128 @@
+.header{
+    width: 0%;
+    height: 25vh;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registerHeaderContainar{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.daimei{
+    display: inline-block;
+    width: 40%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 2.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media (max-width:600px){
+    .daimei{
+        font-size: 1.5rem;
+    }
+}
+.nihonngodaimei{
+    color: aliceblue;
+}
+.registerspan01{
+    opacity: 0;
+    transition-delay: 200ms;
+    transition: all 1000ms;
+}
+.registerspan02{
+    opacity: 0;
+    transition-delay: 600ms;
+    transition: all 1300ms;
+}
+.registerspan03{
+    opacity: 0;
+    transition-delay: 100ms;
+    transition: all 800ms;
+}
+.registerspan04{
+    opacity: 0;
+    transition-delay: 500ms;
+    transition: all 1200ms;
+}
+.registerspan05{
+    opacity: 0;
+    transition-delay: 250ms;
+    transition: all 700ms;
+}
+.registerspan06{
+    opacity: 0;
+    transition-delay: 700ms;
+    transition: all 900ms;
+}
+.registerspan07{
+    opacity: 0;
+    transition-delay: 400ms;
+    transition: all 1000ms;
+}
+.nihonngodaimei{
+    opacity: 0;
+    transition-delay: 600ms;
+    transition: all 1500ms;
+}
+.registerFadeIn{
+    opacity: 1;
+}
+.formContainar{
+    width: 100%;
+    height: 75vh;
+    background-color: rgb(206, 204, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* ボタン */
+.submit{
+    text-decoration: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 60px;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid white;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: all 500ms;
+    font-size: small;
+}
+.submit a{
+    position: relative;
+    top: 17px;
+    text-align: center;
+    color: aliceblue;
+    transition: all 500ms;
+}
+@media (max-width:600px){
+    .submit{
+        position: relative;
+        top: 10px;
+        width: 70px;
+        height: 45px;
+        font-size: xx-small;
+    }
+}
+.submit:hover{
+    color: rgb(24, 24, 24);
+    background-color: aliceblue;
+    border: 1px solid rgb(24, 24, 24);
+    transform: scale(1.2,1.2);
+}
+.submit a:hover{
+    color: rgb(24, 24, 24);
+}
