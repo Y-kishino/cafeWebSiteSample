@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
+<script src="js/register.js"></script>
     <header class="header">
         <div class="registerHeaderContainar">
             <div class="daimei">
